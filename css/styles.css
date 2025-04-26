@@ -4442,7 +4442,76 @@ td:last-child {
 	}
 }
 
-
+.form-container {
+	background: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 550px;
+  }
+  .form-container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+  }
+  .form-row {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+  }
+  .form-group {
+	position: relative;
+	flex: 1;
+  }
+  .form-group i {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+	font-size: 18px;
+	color: #888;
+	pointer-events: none;
+  }
+  .form-group input,
+  .form-group textarea {
+	width: 100%;
+	padding: 12px 12px 12px 40px;
+	border: 1px solid #ccc;
+	position: relative;
+	top: 10px;
+	border-radius: 10px;
+	outline: none;
+	transition: 0.3s ease;
+  }
+  .form-group textarea {
+	resize: vertical;
+	min-height: 100px;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+	border-color: #00C851;
+  }
+  .btn-submit {
+	width: 100%;
+	background: #00C851;
+	color: white;
+	border: none;
+	padding: 14px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s ease;
+  }
+  .btn-submit:hover {
+	background: #007E33;
+  }
+  @media (max-width: 600px) {
+	.form-row {
+	  flex-direction: column;
+	}
+  }
 
 /* ===================================================================
  * # BLOG STYLES 
